@@ -1,0 +1,21 @@
+program Aurelius;
+
+uses
+  Vcl.Forms,
+  uFrmManutGrid in 'Client\View\uFrmManutGrid.pas' {FrmManutGrid},
+  OracleConnectionModule in 'Sever\Units\OracleConnectionModule.pas' {FireDacOracleConnection: TDataModule},
+  uPessoa in 'Client\Units\uPessoa.pas',
+  uFrmLog in 'Client\View\uFrmLog.pas' {FrmLog},
+  uFrmPrinc in 'Client\View\uFrmPrinc.pas' {FrmSelecaoTpManut};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFireDacOracleConnection, FireDacOracleConnection);
+  Application.CreateForm(TFrmManutGrid, FrmManutGrid);
+  Application.CreateForm(TFrmLog, FrmLog);
+  Application.CreateForm(TFrmSelecaoTpManut, FrmSelecaoTpManut);
+  Application.Run;
+end.

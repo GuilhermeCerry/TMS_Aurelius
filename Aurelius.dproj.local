@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/04 16:12:28.000.583,=C:\Users\guilherme.cerry\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/10/04 17:00:43.000.222,C:\Users\guilherme.cerry\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.dfm</Transaction>
+    <Transaction>2023/10/04 17:00:43.000.222,C:\Users\guilherme.cerry\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.pas</Transaction>
+    <Transaction>2023/10/04 17:00:59.000.344,C:\Users\guilherme.cerry\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\zRede\GitHub Pessoal\TMS_Aurelius\Aurelius.dproj</Transaction>
+    <Transaction>2023/10/04 17:06:19.000.587,=D:\zRede\GitHub Pessoal\TMS_Aurelius\ConnectionModule.pas</Transaction>
+    <Transaction>2023/10/04 17:26:34.000.896,D:\zRede\GitHub Pessoal\TMS_Aurelius\ConnectionModule.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Sever\Units\OracleConnectionModule.pas</Transaction>
+    <Transaction>2023/10/04 17:26:34.000.896,D:\zRede\GitHub Pessoal\TMS_Aurelius\ConnectionModule.dfm=D:\zRede\GitHub Pessoal\TMS_Aurelius\Sever\Units\OracleConnectionModule.dfm</Transaction>
+    <Transaction>2023/10/04 17:27:02.000.337,=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas</Transaction>
+    <Transaction>2023/10/04 17:53:34.000.206,D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\Units\uPessoa.pas</Transaction>
+    <Transaction>2023/10/24 08:08:03.000.758,=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmLog.pas</Transaction>
+    <Transaction>2023/11/08 08:00:48.000.645,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmManutGrid.dfm=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.dfm</Transaction>
+    <Transaction>2023/11/08 08:00:48.000.645,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmManutGrid.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.pas</Transaction>
+    <Transaction>2023/11/08 08:02:52.000.462,=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit2.pas</Transaction>
+    <Transaction>2023/11/08 08:03:08.000.409,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit2.pas</Transaction>
+    <Transaction>2023/11/08 08:03:08.000.409,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmPrinc.dfm=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit2.dfm</Transaction>
+    <Transaction>2023/11/08 08:20:23.000.762,=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas</Transaction>
+    <Transaction>2023/11/08 08:20:42.000.731,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmManutManual.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas</Transaction>
+    <Transaction>2023/11/08 08:20:42.000.731,D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\View\uFrmManutManual.dfm=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.dfm</Transaction>
+    <Transaction>2023/11/20 07:45:45.000.511,=D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas</Transaction>
+    <Transaction>2023/11/20 07:49:11.000.030,D:\zRede\GitHub Pessoal\TMS_Aurelius\Unit1.pas=D:\zRede\GitHub Pessoal\TMS_Aurelius\Client\Units\uEndereco.pas</Transaction>
+  </Transactions>
+</BorlandProject>

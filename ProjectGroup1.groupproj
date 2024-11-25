@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{960237F1-B4B9-49F7-BD91-EE08B57F6CA4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Aurelius.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NorthWindPackage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Aurelius">
+        <MSBuild Projects="Aurelius.dproj"/>
+    </Target>
+    <Target Name="Aurelius:Clean">
+        <MSBuild Projects="Aurelius.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Aurelius:Make">
+        <MSBuild Projects="Aurelius.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NorthWindPackage">
+        <MSBuild Projects="NorthWindPackage.dproj"/>
+    </Target>
+    <Target Name="NorthWindPackage:Clean">
+        <MSBuild Projects="NorthWindPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NorthWindPackage:Make">
+        <MSBuild Projects="NorthWindPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Aurelius;NorthWindPackage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Aurelius:Clean;NorthWindPackage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Aurelius:Make;NorthWindPackage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

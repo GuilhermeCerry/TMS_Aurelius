@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 352
+  ClientWidth = 802
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnPessoa: TPanel
+    Left = 0
+    Top = 0
+    Width = 802
+    Height = 293
+    Align = alClient
+    TabOrder = 0
+    object cxGrid: TcxGrid
+      Left = 1
+      Top = 1
+      Width = 800
+      Height = 291
+      Align = alClient
+      TabOrder = 0
+      object cxGridPessoaView1: TcxGridDBTableView
+        Navigator.Buttons.CustomButtons = <>
+        DataController.DataSource = dsPessoa
+        DataController.Summary.DefaultGroupSummaryItems = <>
+        DataController.Summary.FooterSummaryItems = <>
+        DataController.Summary.SummaryGroups = <>
+        object cxGrdPessoa_ID: TcxGridDBColumn
+          DataBinding.FieldName = 'ID'
+        end
+        object cxGrdPessoa_NOME: TcxGridDBColumn
+          Caption = 'Nome'
+          DataBinding.FieldName = 'NOME'
+          Width = 112
+        end
+        object cxGrdPessoa_SOBRENOME: TcxGridDBColumn
+          Caption = 'Sobrenome'
+          DataBinding.FieldName = 'SOBRENOME'
+          Width = 159
+        end
+        object cxGrdPessoa_DATANASCIMENTO: TcxGridDBColumn
+          Caption = 'Data de Nascimento'
+          DataBinding.FieldName = 'DATANASCIMENTO'
+          Width = 119
+        end
+      end
+      object cxGridPessoaLvl1: TcxGridLevel
+        GridView = cxGridPessoaView1
+      end
+    end
+  end
+  object pnBotoes: TPanel
+    Left = 0
+    Top = 293
+    Width = 802
+    Height = 59
+    Align = alBottom
+    TabOrder = 1
+    object btInserir: TButton
+      Left = 24
+      Top = 19
+      Width = 97
+      Height = 25
+      Caption = 'Inserir'
+      TabOrder = 0
+      OnClick = btInserirClick
+    end
+    object btConsultar: TButton
+      Left = 144
+      Top = 18
+      Width = 97
+      Height = 25
+      Caption = 'Consultar'
+      TabOrder = 1
+      OnClick = btConsultarClick
+    end
+  end
+  object adsPessoa: TAureliusDataset
+    FieldDefs = <>
+    Left = 456
+    Top = 232
+  end
+  object dsPessoa: TDataSource
+    DataSet = adsPessoa
+    Left = 376
+    Top = 160
+  end
+end

@@ -1,0 +1,41 @@
+unit uFrmPrinc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmManutGrid, Vcl.StdCtrls,
+  Vcl.ExtCtrls;
+
+type
+  TForm2 = class(TForm)
+    pnPrinc: TPanel;
+    grpPrinc: TGroupBox;
+    btPessoaGrid: TButton;
+    btPessoaManual: TButton;
+    procedure btPessoaGridClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.btPessoaGridClick(Sender: TObject);
+var
+  oFrmManutGrid: TFrmManutGrid;
+begin
+  oFrmManutGrid := TFrmManutGrid.Create(self);
+
+  oFrmManutGrid.ShowModal;
+
+  FreeAndNil(oFrmManutGrid);
+end;
+
+end.
